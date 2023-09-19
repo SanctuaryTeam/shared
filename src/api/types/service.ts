@@ -1,4 +1,5 @@
 import { Game } from '@diablosnaps/common';
+import { API } from '..';
 import { AuthUser } from './';
 
 export const TAGS = {
@@ -33,6 +34,23 @@ export interface ServiceListing {
     maxAcceptedSlots?: number;
     updatedAt?: string;
     deleted?: boolean;
+}
+
+export interface ServiceDto {
+    id: number;
+    realmType: string;
+    title: string;
+    content: string;
+    user: API.UserDto;
+    userId: number;
+    tags: number;
+    maxAcceptedSlots: number;
+    slots: API.ServiceSlotDto[];
+    bumpedAt: Date;
+    createdAt: Date;
+    updatedAt: Date;
+    updatedBy: string;
+    deleted: boolean;
 }
 
 export interface ServiceGetSearchQuery {

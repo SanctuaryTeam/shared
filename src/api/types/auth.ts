@@ -1,4 +1,4 @@
-import { API } from "..";
+import { API } from '..';
 
 export interface AuthUser {
     id?: string;
@@ -7,6 +7,16 @@ export interface AuthUser {
     discordName: string;
     vouchRating: number;
     vouchScore: number;
+}
+
+export interface UserDto {
+    id?: number;
+    discordName: string;
+    discordId?: string;
+    email?: string;
+    battleNetTag: string;
+    vouchScore?: number;
+    vouchRating?: number;
 }
 
 export interface Notification {

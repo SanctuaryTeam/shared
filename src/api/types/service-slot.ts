@@ -19,6 +19,18 @@ export interface ServiceSlot {
     updatedAt: Date;
 }
 
+export interface ServiceSlotDto {
+    id: number;
+    state: API.ServiceSlotStates;
+    service: API.ServiceDto;
+    serviceId?: number;
+    serviceOwner: API.UserDto;
+    serviceOwnerUserId: number;
+    client: API.UserDto;
+    clientUserId: number;
+    updatedAt: Date;
+}
+
 export interface ServiceSlotGetSearchQuery {
     userId?: string;
     state?: ServiceSlotStates;
