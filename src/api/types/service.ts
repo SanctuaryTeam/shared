@@ -37,7 +37,7 @@ export interface ServiceListing {
 }
 
 export interface ServiceDto {
-    id: number;
+    id: string;
     realmType: string;
     title: string;
     content: string;

@@ -10,7 +10,7 @@ export interface AuthUser {
 }
 
 export interface UserDto {
-    id?: number;
+    id?: string;
     discordName: string;
     discordId?: string;
     email?: string;

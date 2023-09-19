@@ -20,7 +20,7 @@ export interface ServiceSlot {
 }
 
 export interface ServiceSlotDto {
-    id: number;
+    id: string;
     state: API.ServiceSlotStates;
     service: API.ServiceDto;
     serviceId?: number;
